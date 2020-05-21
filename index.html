@@ -196,18 +196,19 @@ summary {
 
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
-<p>In the survival analytics, two techniques for providing summary curves which tell us about the survival experience of a cohort of individuals. They are Kaplan-Meier estimator, which provides an estimate of the survival function, and the Nelson-Aalan estimator, which provides an estimate of the cumulative hazard rate. Although these two statistics provide an investigator with important information about the eventual death time of an individual, they provide only limited information about the mechanism of the process under study, as summarized by the hazard rate. The slope of the Nelson-Aalan estimator provides a crude estimate of the hazard rate, but this estimate is often hard to interpret. To overcome these disadvantages, kernel-smoothing technique has been an essential and common tool to provide investigators a better estimator of the hazard rate function.</p>
+<p>In the survival analytics, two techniques for providing summary curves which tell us about the survival experience of a cohort of individuals. They are Kaplan-Meier estimator, which provides an estimate of the survival function, and the Nelson-Aalan estimator, which provides an estimate of the cumulative hazard rate. Although these two statistics provide an investigator with important information about the eventual death time of an individual, they provide only limited information about the mechanism of the process under study, as summarized by the hazard rate. The slope of the Nelson-Aalan estimator provides a crude estimate of the hazard rate, but this estimate is often hard to interpret. To overcome these disadvantages, kernel-smoothing technique has been used as an essential and common tool to provide investigators a better estimator of the hazard rate function.</p>
 <p>In this work, we invented the flexible and computationally fast funcntions to help users compute and estimate smoothed hazard rate functions, variances, confidence intervals and optimal values by using different kernel-smoothing methods. We also created the plot functions to help user visualize the outputs. The major achievements are summarized below, the functions can</p>
 <ul>
 <li><p>flexibly switch among kernel-smoothing methods based on users’ need.</p></li>
 <li><p>recognize groups in the user-provided dataset and output statistics by group if the user specified.</p></li>
 <li><p>visualize smoothed hazard rate functions by user-specified groups.</p></li>
 </ul>
-<p>Here, we only demonstrate the coding part and some examples. For more explanations, please refer to our slides. You can find both the slides and the dataset at my github, <a href="https://github.com/xiranwang7/Hazard-Smooth-Functions" class="uri">https://github.com/xiranwang7/Hazard-Smooth-Functions</a>.</p>
+<p>Here, we only demonstrate the coding part and some examples. For more explanations, please refer to the project slides. You can find both the slides and the datasets at my Github <a href="https://github.com/xiranwang7/Hazard-Smooth-Functions" class="uri">https://github.com/xiranwang7/Hazard-Smooth-Functions</a>.</p>
 </div>
 <div id="read-example-data" class="section level3">
 <h3>Read Example Data</h3>
 <pre class="r"><code>rm(list=ls())
+
 library(survival)
 library(KMsurv)
 
